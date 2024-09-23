@@ -17,14 +17,37 @@ Este proyecto implementa un sistema de reconocimiento de gestos en tiempo real p
 * **Traducción a texto:** El resultado de la clasificación, que es una representación numérica de la clase, se convierte en una palabra o frase legible en lenguaje natural.
 Modelo
 
+## 
+* ***Como funciona***
+  
+    ``` mermaid
+        sequenceDiagram
+            participant Usuario
+            participant Cámara
+            participant Procesamiento de video
+            participant Detección de manos
+            participant Extracción de características
+            participant Red Neuronal
+            participant Módulo de traducción
+        
+            Usuario->>Cámara: Captura video de gesto
+            Cámara->>Procesamiento de video: Envía video
+            Procesamiento de video->>Detección de manos: Preprocesa video
+            Detección de manos->>Extracción de características: Detecta manos
+            Extracción de características->>Red Neuronal: Extrae características
+            Red Neuronal->>Módulo de traducción: Clasifica gesto
+            Módulo de traducción->>Usuario: Muestra traducción
+      ```
+
 * **Arquitectura:** Se utiliza una arquitectura híbrida que combina redes neuronales convolucionales (CNN) para extraer características espaciales de los gestos y redes neuronales recurrentes (RNN) como LSTM o GRU para modelar la secuencia temporal de los gestos.
 * **Entrenamiento:** El modelo se entrena en un conjunto de datos de videos de gestos etiquetados, utilizando una función de pérdida de entropía cruzada y un optimizador Adam. Se aplican técnicas de aumento de datos, como rotaciones, escalado y cambios de brillo, para mejorar la generalización del modelo.
 * **Evaluación:** El rendimiento del modelo se evalúa utilizando métricas como precisión, recall y F1-score. Se realiza una validación cruzada para obtener una estimación más robusta del rendimiento.
+  
 * **Conjunto de Datos**
-
 * **Descripción:** El conjunto de datos consiste en videos de personas realizando gestos en lenguaje de señas, etiquetados con la palabra o frase correspondiente.
 * **Formato:** Los videos están en formato [formato] y las etiquetas están en formato [formato].
-* 
+
+  
 ### Resultados
 
 Precisión: [Valor] %

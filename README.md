@@ -37,7 +37,7 @@ Modelo
             Extracción de características->>Red Neuronal: Extrae características
             Red Neuronal->>Módulo de traducción: Clasifica gesto
             Módulo de traducción->>Usuario: Muestra traducción
-      ```
+    ```
 
 * **Arquitectura:** Se utiliza una arquitectura híbrida que combina redes neuronales convolucionales (CNN) para extraer características espaciales de los gestos y redes neuronales recurrentes (RNN) como LSTM o GRU para modelar la secuencia temporal de los gestos.
 * **Entrenamiento:** El modelo se entrena en un conjunto de datos de videos de gestos etiquetados, utilizando una función de pérdida de entropía cruzada y un optimizador Adam. Se aplican técnicas de aumento de datos, como rotaciones, escalado y cambios de brillo, para mejorar la generalización del modelo.

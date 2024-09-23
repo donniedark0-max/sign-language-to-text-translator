@@ -1,4 +1,4 @@
-# Traductor de Lenguaje de Señas a Texto
+# Traductor de Lengua de Señas a Texto (En progreso)
 
 Este proyecto implementa un sistema de reconocimiento de gestos en tiempo real para traducir el lenguaje de señas al lenguaje hablado. Utiliza un enfoque de deep learning para procesar videos y extraer características relevantes de los gestos.
 

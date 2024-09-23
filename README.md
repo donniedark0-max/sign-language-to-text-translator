@@ -24,7 +24,8 @@ Modelo
 
 * **Descripción:** El conjunto de datos consiste en videos de personas realizando gestos en lenguaje de señas, etiquetados con la palabra o frase correspondiente.
 * **Formato:** Los videos están en formato [formato] y las etiquetas están en formato [formato].
-Resultados
+* 
+### Resultados
 
 Precisión: [Valor] %
 
